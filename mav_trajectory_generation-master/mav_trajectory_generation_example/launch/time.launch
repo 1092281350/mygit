@@ -1,0 +1,11 @@
+<launch>
+
+
+        <!--- Trajectory sampler -->
+        <node name="sampler" pkg="mav_trajectory_generation_ros" type="time_evaluation_node" output="screen">
+            <!-- <remap from="path_segments" to="trajectory"/> -->
+        </node>
+
+
+    <node type="rviz" name="rviz" pkg="rviz" args="-d $(find mav_trajectory_generation_example)/cfg/rviz_view_my.rviz" />
+</launch>

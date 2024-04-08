@@ -1,0 +1,80 @@
+<launch>
+  <!-- <include file="$(find min_snap)/launch/rviz.launch" /> -->
+  <!-- <include file="$(find px4ctrl)/launch/run_node.launch" /> -->
+<include file="$(find  dji_sdk)/launch/sdk.launch" />
+
+  <!-- size of map, change the size inflate x, y, z according to your application -->
+  <arg name="map_size_x" value="10.0"/>
+  <arg name="map_size_y" value="10.0"/>
+  <arg name="map_size_z" value=" 3.0"/>
+  <arg name="mean_vel" value="1.0" />
+
+  <!-- topic of your odometry such as VIO or LIO -->
+  <arg name="odom_topic" value="/firefly/robot_fuse/odom" />
+  <param name="qvalue" value="2"/>
+  <param name="rvalue" value="0.7"/>
+  <param name="wugui" value="false"/>
+<param name="w" value="true"/>
+  <!-- use simulator -->
+  <!-- <include file="$(find traj_server)/launch/my_sim.xml">
+    <arg name="map_size_x_" value="$(arg map_size_x)"/>
+    <arg name="map_size_y_" value="$(arg map_size_y)"/>
+    <arg name="map_size_z_" value="$(arg map_size_z)"/>
+    <arg name="c_num" value="200"/>
+    <arg name="p_num" value="200"/>
+    <arg name="min_dist" value="1.2"/>
+    <arg name="odometry_topic" value="$(arg odom_topic)" />
+  </include> -->
+
+  <!-- minimum snap close_form, pub poly coefs  min_snap_generator-->
+  <!-- <node pkg="min_snap" name="min_snap_generator_my" type="min_snap_generator_my" output="screen">
+    <remap from="/rviz_goal" to="/rviz/3d_nav_goal" />
+    <remap from="/goal_list" to="/planning/goal_list" />
+    <remap from="/poly_coefs" to="/planning/poly_coefs" />
+    <remap from="/local_position" to="/dji_sdk/local_position" />
+    <remap from="/last_point" to="/dtu_controller/last_point" />
+    <remap from="/control_status" to="/dtu_controller/control_status" />
+        <remap from="/pose" to="/command/pose" />
+        <remap from="/odom_topic" to="$(arg odom_topic)" />
+    <remap from="/position_cmd" to="/planning/pos_cmd" />
+    <param name="meanvel" value="$(arg mean_vel)" /> 
+  </node> -->
+
+  <!-- visualization, display goals, vel, acc, jerk, planning path -->
+  <node pkg="my_visualization" name="min_snap_visual" type="min_snap_visual" output="screen">
+    <remap from="/goal_list" to="/planning/goal_list" />
+    <remap from="/position_cmd" to="/planning/pos_cmd" />
+    <remap from="/traj_pts" to="/planning/traj_pts" />
+    <remap from="/odometry" to="$(arg odom_topic)" />
+  </node>
+
+  <!-- publish position_cmd -->
+  <!-- <node pkg="traj_server" name="my_traj_server" type="my_traj_server" output="screen">
+    <remap from="/position_cmd" to="/planning/pos_cmd" />
+    <remap from="/poly_coefs" to="/planning/poly_coefs" />
+    <remap from="/traj_pts" to="/planning/traj_pts" />
+  </node> -->
+
+ <!-- test circle -->
+  <!-- <node pkg="traj_server" name="my_traj_server_test" type="my_traj_server_test" output="screen">
+    <remap from="/position_cmd" to="/planning/pos_cmd" />
+    <remap from="/poly_coefs" to="/planning/poly_coefs" />
+    <remap from="/traj_pts" to="/planning/traj_pts" />
+  </node> -->
+
+ <!-- visual Path -->
+  <node pkg="odom_visualization" name="odom_visualization" type="odom_visualization" output="screen">
+        <remap from="~odom" to="$(arg odom_topic)"/>
+        <param name="color/a" value="1.0"/>    
+        <param name="color/r" value="0.0"/>        
+        <param name="color/g" value="0.0"/>        
+        <param name="color/b" value="0.0"/>       
+        <param name="covariance_scale" value="100.0"/>       
+        <param name="robot_scale" value="1.0"/>
+        <param name="tf45" value="true"/>
+  </node>
+
+<!-- <node pkg="dji_sdk_demo" name="demo_flight_control_node" type="demo_flight_control_node" output="screen">
+    <remap from="/position_cmd" to="/planning/pos_cmd" />
+  </node> -->
+</launch>

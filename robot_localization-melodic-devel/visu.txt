@@ -1,0 +1,11 @@
+查看tf树，在catkin_ws下
+python2 /opt/ros/melodic/lib/tf/view_frames
+
+录包只能用，单独录
+rosbag record -o h.bag /firefly/robot_fuse/odom /dji_sdk/imu /dji_sdk/local_position /dji_sdk/velocity
+比较xy
+rosbag record -o h.bag /firefly/robot_fuse/odom /firefly/command/trajectory /dji_sdk/local_position /dji_sdk/imu
+
+可视化IMU和融合后odom数据
+用python2 ./visu.py
+用python2 ./comp_xy.py

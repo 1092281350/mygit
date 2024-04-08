@@ -1,0 +1,16 @@
+<launch>
+  <arg name="mav_name" default="firefly" />
+  <arg name="namespace" default="$(arg mav_name)"/>    
+  <group ns="$(arg namespace)">
+    <node name="mav_nonlinear_mpc" pkg="mav_nonlinear_mpc" type="nonlinear_mpc_node" respawn="true" clear_params="true" output="screen">
+      <remap from="odometry" to="robot_fuse/odom" />
+      <rosparam file="$(find mav_nonlinear_mpc)/resources/nonlinear_mpc_hummingbird.yaml" />
+      <rosparam file="$(find mav_disturbance_observer)/resources/disturbance_observer_hummingbird.yaml"/>
+      <!-- <rosparam file="$(find mav_nonlinear_mpc)/cfg/raven/nonlinear_mpc_50hz.yaml" />  $(arg mav_name)
+      <rosparam file="$(find mav_nonlinear_mpc)/cfg/raven/disturbance_observer_rpyrate_thrust.yaml"/> -->
+      <param name="use_rc_teleop" value="false"/>
+      <param name="verbose" value="false" />
+      <param name="reference_frame" value="world"/>
+    </node>
+  </group>
+</launch>

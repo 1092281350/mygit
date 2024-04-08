@@ -1,0 +1,15 @@
+device: "/dev/ttyUSB0"
+app_id: 1133040
+enc_key: "87e07b2fbac23b9e3e037a32766f359df0c9dc0cf347cf8069a6921cd84e6dfd"
+thrust_minimum: 10
+thrust_maximum: 100
+thrust_offset: 8.945
+thrust_coefficient: 0.7389
+
+#available freq: 0 1 10 50 100 Hz
+imu_update_rate: 50
+gps_updae_rate: 10
+time_stamp_update_rate: 1
+magnetometer_update_rate: 10
+rc_update_rate: 50
+status_update_rate: 10

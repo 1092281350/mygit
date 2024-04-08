@@ -1,0 +1,32 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/qzh/catkin_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/qzh/catkin_ws/src/Onboard-SDK-ROS-3.8/dji_sdk/include/**",
+        "/home/qzh/catkin_ws/src/Onboard-SDK-ROS-3.8/dji_sdk_demo/include/**",
+        "/home/qzh/catkin_ws/src/min_snap_trajectory/min_snap/include/**",
+        "/home/qzh/catkin_ws/src/min_snap_trajectory/traj_utils/include/**",
+        "/home/qzh/catkin_ws/src/min_snap_trajectory/uav_simulator/Utils/multi_map_server/include/**",
+        "/home/qzh/catkin_ws/src/min_snap_trajectory/uav_simulator/my_visualization/include/**",
+        "/home/qzh/catkin_ws/src/min_snap_trajectory/uav_simulator/Utils/pose_utils/include/**",
+        "/home/qzh/catkin_ws/src/min_snap_trajectory/uav_simulator/Utils/quadrotor_msgs/include/**",
+        "/home/qzh/catkin_ws/src/min_snap_trajectory/uav_simulator/so3_control/include/**",
+        "/home/qzh/catkin_ws/src/min_snap_trajectory/uav_simulator/so3_quadrotor_simulator/include/**",
+        "/home/qzh/catkin_ws/src/min_snap_trajectory/uav_simulator/Utils/uav_utils/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

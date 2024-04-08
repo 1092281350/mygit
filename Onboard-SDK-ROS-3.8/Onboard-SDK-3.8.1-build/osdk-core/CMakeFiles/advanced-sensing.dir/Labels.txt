@@ -1,0 +1,13 @@
+# Target labels
+ advanced-sensing
+# Source files and their labels
+/home/qzh/catkin_ws/src/Onboard-SDK-ROS-3.8/Onboard-SDK-3.8.1-build/osdk-core/CMakeFiles/advanced-sensing
+/home/qzh/catkin_ws/src/Onboard-SDK-ROS-3.8/Onboard-SDK-3.8.1-build/osdk-core/CMakeFiles/advanced-sensing.rule
+/home/qzh/catkin_ws/src/Onboard-SDK-ROS-3.8/Onboard-SDK-3.8.1-build/osdk-core/CMakeFiles/advanced-sensing-complete.rule
+/home/qzh/catkin_ws/src/Onboard-SDK-ROS-3.8/Onboard-SDK-3.8.1-build/osdk-core/advanced-sensing-prefix/src/advanced-sensing-stamp/advanced-sensing-install.rule
+/home/qzh/catkin_ws/src/Onboard-SDK-ROS-3.8/Onboard-SDK-3.8.1-build/osdk-core/advanced-sensing-prefix/src/advanced-sensing-stamp/advanced-sensing-mkdir.rule
+/home/qzh/catkin_ws/src/Onboard-SDK-ROS-3.8/Onboard-SDK-3.8.1-build/osdk-core/advanced-sensing-prefix/src/advanced-sensing-stamp/advanced-sensing-download.rule
+/home/qzh/catkin_ws/src/Onboard-SDK-ROS-3.8/Onboard-SDK-3.8.1-build/osdk-core/advanced-sensing-prefix/src/advanced-sensing-stamp/advanced-sensing-update.rule
+/home/qzh/catkin_ws/src/Onboard-SDK-ROS-3.8/Onboard-SDK-3.8.1-build/osdk-core/advanced-sensing-prefix/src/advanced-sensing-stamp/advanced-sensing-patch.rule
+/home/qzh/catkin_ws/src/Onboard-SDK-ROS-3.8/Onboard-SDK-3.8.1-build/osdk-core/advanced-sensing-prefix/src/advanced-sensing-stamp/advanced-sensing-configure.rule
+/home/qzh/catkin_ws/src/Onboard-SDK-ROS-3.8/Onboard-SDK-3.8.1-build/osdk-core/advanced-sensing-prefix/src/advanced-sensing-stamp/advanced-sensing-build.rule

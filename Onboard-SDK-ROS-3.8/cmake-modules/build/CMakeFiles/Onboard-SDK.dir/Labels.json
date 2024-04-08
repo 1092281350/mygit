@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/qzh/catkin_ws/src/Onboard-SDK-ROS-3.8/cmake-modules/build/CMakeFiles/Onboard-SDK"
+		},
+		{
+			"file" : "/home/qzh/catkin_ws/src/Onboard-SDK-ROS-3.8/cmake-modules/build/CMakeFiles/Onboard-SDK.rule"
+		},
+		{
+			"file" : "/home/qzh/catkin_ws/src/Onboard-SDK-ROS-3.8/cmake-modules/build/CMakeFiles/Onboard-SDK-complete.rule"
+		},
+		{
+			"file" : "/home/qzh/catkin_ws/src/Onboard-SDK-ROS-3.8/cmake-modules/build/Onboard-SDK-prefix/src/Onboard-SDK-stamp/Onboard-SDK-install.rule"
+		},
+		{
+			"file" : "/home/qzh/catkin_ws/src/Onboard-SDK-ROS-3.8/cmake-modules/build/Onboard-SDK-prefix/src/Onboard-SDK-stamp/Onboard-SDK-mkdir.rule"
+		},
+		{
+			"file" : "/home/qzh/catkin_ws/src/Onboard-SDK-ROS-3.8/cmake-modules/build/Onboard-SDK-prefix/src/Onboard-SDK-stamp/Onboard-SDK-download.rule"
+		},
+		{
+			"file" : "/home/qzh/catkin_ws/src/Onboard-SDK-ROS-3.8/cmake-modules/build/Onboard-SDK-prefix/src/Onboard-SDK-stamp/Onboard-SDK-update.rule"
+		},
+		{
+			"file" : "/home/qzh/catkin_ws/src/Onboard-SDK-ROS-3.8/cmake-modules/build/Onboard-SDK-prefix/src/Onboard-SDK-stamp/Onboard-SDK-patch.rule"
+		},
+		{
+			"file" : "/home/qzh/catkin_ws/src/Onboard-SDK-ROS-3.8/cmake-modules/build/Onboard-SDK-prefix/src/Onboard-SDK-stamp/Onboard-SDK-configure.rule"
+		},
+		{
+			"file" : "/home/qzh/catkin_ws/src/Onboard-SDK-ROS-3.8/cmake-modules/build/Onboard-SDK-prefix/src/Onboard-SDK-stamp/Onboard-SDK-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Onboard-SDK"
+		],
+		"name" : "Onboard-SDK"
+	}
+}
